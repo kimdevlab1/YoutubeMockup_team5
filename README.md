@@ -8,8 +8,8 @@
 ## 7. 핵심 UI 요소 구현
 ## 8. 결과 화면
 ## 9. 팀원 역할
-A: Header 담당
-B: Video Grid 담당
-C: Sidebar 담당
-D: General + Layout 담당
-E: 레포 + 문서 + 통합 담당
+- A: Header 담당
+- B: Video Grid 담당
+- C: Sidebar 담당
+- D: General + Layout 담당
+- E: 레포 + 문서 + 통합 담당
