@@ -1,10 +1,9 @@
 # YoutubeMockup_team5
 ## 팀원 역할
-- A: Header 담당
-- B: Video Grid 담당
-- C: Sidebar 담당
-- D: General + Layout 담당
-- E: 레포 + 문서 + 통합 담당
+- 최희원 : Video Grid + Repo 통합
+- 정윤서 : Filter Chips + Layout 보조
+- 조아영 : Sidebar 담당(좌측 메뉴 + 쇼츠 포함)
+- 김다은 : header(상단바 – 최신 아이콘 구조)
 ## 하위 태스크 
 - 유튜브 UI 구조 분석 및 화면 구성 요소 분해
 - HTML을 사용한 기본 구조 작성
