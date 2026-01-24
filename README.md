@@ -1,5 +1,5 @@
 # YoutubeMockup_team5
-자기 영역 CSS + 자기 영역 내부 HTML만 수정 => 레포 담당자 main merge
+자기 영역 CSS + 자기 영역 내부 HTML만 수정 => PR => 레포 담당자 main merge
 ## 팀원 역할
 - 최희원 : Video Grid + Repo 통합. main + feature/video-grid 브랜치
 - 정윤서 : Filter Chips + Layout 보조. feature/filter-chips 브랜치 
