@@ -8,8 +8,8 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    top: 55px;
-    background-color: #212121FF;
+    top: 55px; /* 헤더 높이 */
+    background-color: #212121FF; 
     width: 240px;
     z-index: 200;
     padding: 0;
@@ -18,7 +18,7 @@
 
 /* 섹션 공통 스타일 */
 .sidebar-section {
-    padding: 12px 0;
+    padding: 12px;
     border-bottom: 1px solid #ffffff33;
 }
 
@@ -32,10 +32,8 @@
     height: 40px;
     display: flex;
     align-items: center;
-    padding: 0 24px;
-    /* flex-direction: row; 세로에서 가로로 변경 */
-    /* justify-content: flex-start; 왼쪽 정렬 */
-    /* border-radius: 10px; */
+    padding: 0 12px;
+    border-radius: 10px;
     cursor: pointer;
     gap: 24px; /* 아이콘과 글자 사이 간격 */
     font-size: 14px;
@@ -52,7 +50,7 @@
 
 /* 로그인 버튼 섹션 수정*/
 .section-signin {
-    padding: 16px 32px;
+    padding: 16px 28px;
 }
 
 .sidebar-message {
@@ -65,10 +63,15 @@
 .signin-button {
     display: flex;
     align-items: center;
-    height: 34px;
-    padding: 0 15px;
+    justify-content: center;
+    gap: 4px;
+
+    height: 36px;
+    /* padding: 0 10px; */
+    padding-left: 10px;
+    padding-right: 15px;
     border: 1px solid #ffffff33;
-    border-radius: 18px; /* 둥근 버튼 */
+    border-radius: 18px; 
     color: #3ea6ff; 
     background: transparent;
     font-size: 14px;
@@ -76,18 +79,19 @@
     cursor: pointer;
 }
 
-.signin-button img {
-    width: 24px;
-    margin-right: 8px;
+.signin-button svg {
+    width: 28px;
+    height: 28px;
+    margin-left: -2px;
 }
 
 /* "탐색" 제목 스타일 */
 .sidebar-section-title {
-    padding: 6px 24px; /* 옆에 있는 메뉴 아이콘 위치랑 글자 시작점을 맞춤 */
+    padding: 6px 12px 4px 12px;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
-    margin-bottom: 4px; /* 아래 메뉴들과 살짝 간격 */
+    margin-bottom: 4px;
 }
 
 /* 스크롤바 */
@@ -106,7 +110,7 @@
 
 @media (max-width: 1312px) {
     .sidebar {
-        width: 72px; /* 유튜브 미니 사이드바 표준 너비 */
+        width: 72px; 
         padding: 0 4px; 
     }
 
@@ -126,13 +130,13 @@
 
     /* 4. 미니 링크 스타일 (아이콘 아래 텍스트) */
     .sidebar-link {
-        flex-direction: column; /* 세로 배치 */
+        flex-direction: column; 
         justify-content: center;
         align-items: center;
         height: 74px; 
         width: 100%;
         padding: 0;
-        gap: 6px; /* 아이콘과 글자 사이 아주 좁은 간격 */
+        gap: 6px; 
         border-radius: 8px;
     }
 
@@ -142,7 +146,7 @@
     }
 
     .sidebar-link div {
-        font-size: 10px; /* 미니 모드 특유의 아주 작은 텍스트 */
+        font-size: 10px; 
         line-height: 14px;
         text-align: center;
     }
