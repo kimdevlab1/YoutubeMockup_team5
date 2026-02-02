@@ -2,6 +2,11 @@
 ## 협업 규칙
 - main 브랜치는 보호되어 있으며, 모든 변경은 feature 브랜치 → PR → 승인 후 merge
 - main merge는 레포 담당자만 수행
+  
+## 역할 분담
+- 김다은 : Header + Filter Chips(tabs) UI 구현
+- 조아영 : Sidebar + General CSS + Shorts 영역
+- 최희원 : 전체 코드 통합, 레이아웃 보완 및 UI 디테일 수정
 
 ## 구현 화면 (Preview)
 
@@ -78,8 +83,4 @@ CSS 및 JavaScript에서 효율적으로 제어할 수 있도록
   
   프로젝트 진행 과정과 결과를 README로 정리했다. 하위 태스크 수행 흐름과 역할 분담이 문서에 드러나도록 작성했다.
   
-## 역할 분담
-- 김다은 : Header + Filter Chips(tabs) UI 구현
-- 조아영 : Sidebar + General CSS + Shorts 영역
-- 최희원 : 전체 코드 통합, 레이아웃 보완 및 UI 디테일 수정
 
