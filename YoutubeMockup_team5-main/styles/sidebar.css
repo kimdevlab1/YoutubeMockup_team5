@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px; /* 헤더 높이 */
+    background-color: #212121FF;
+    width: 240px;
+    z-index: 200;
+    padding: 0;
+    overflow-y: auto;
+}
+
+/* 섹션 공통 스타일 */
+.sidebar-section {
+    padding: 12px;
+    border-bottom: 1px solid #ffffff33;
+}
+
+/* 마지막 섹션은 선이 필요없으므로 제거 */
+.sidebar-section:last-child {
+    border-bottom: none;
+}
+
+/* 개별 링크 */
+.sidebar-link {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    gap: 24px; /* 아이콘과 글자 사이 간격 */
+    font-size: 14px;
+}
+
+.sidebar-link:hover {
+    background-color:#4D4D4D;
+}
+
+.sidebar-link img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 로그인 버튼 섹션 수정*/
+.section-signin {
+    padding: 16px 28px;
+}
+
+.sidebar-message {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 20px;
+    color: #f1f1f1;
+}
+
+.signin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    height: 36px;
+    /* padding: 0 10px; */
+    padding-left: 10px;
+    padding-right: 15px;
+    border: 1px solid #ffffff33;
+    border-radius: 18px; 
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.signin-button svg {
+    width: 28px;
+    height: 28px;
+    margin-left: -2px;
+}
+
+/* "탐색" 제목 스타일 */
+.sidebar-section-title {
+    padding: 6px 12px 4px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+/* 스크롤바 */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent; /* 평소엔 안보이게 */
+    border-radius: 10px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background-color:#717171; /* 마우스 올릴 때만 보이게 */
+}
+
+/* --- 반응형 구간 --- */
+
+@media (max-width: 1312px) {
+    .sidebar {
+        width: 72px; 
+        padding: 0 4px; 
+    }
+
+    /* 1. 첫 번째 섹션 외의 모든 섹션(로그인, 탐색 등) 숨기기 */
+    .sidebar-section:not(:first-child) {
+        display: none;
+    }
+
+    /* 2. 첫 번째 섹션 내부의 '기록' 등 5번째 이후 메뉴 숨기기  */
+    .sidebar-section:first-child .sidebar-link:nth-child(n+5) { display: none; }
+
+    /* 3. 섹션 패딩 및 구분선 제거 */
+    .sidebar-section {
+        padding: 4px 0;
+        border-bottom: none;
+    }
+
+    /* 4. 미니 링크 스타일 (아이콘 아래 텍스트) */
+    .sidebar-link {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 74px; 
+        width: 100%;
+        padding: 0;
+        gap: 6px; 
+        border-radius: 8px;
+    }
+
+    .sidebar-link img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebar-link div {
+        font-size: 10px; 
+        line-height: 14px;
+        text-align: center;
+    }
+}
+
+/* 5. 완전히 사라지는 모드 */
+@media (max-width: 792px) {
+    .sidebar {
+        display: none;
+    }
+}

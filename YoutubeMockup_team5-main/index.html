@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/tabs.css">
+    <link rel="stylesheet" href="styles/video.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="assets/icons/hamburger-menu.svg" >
+            <img class="youtube-logo" src="assets/icons/youtube-logo.svg">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search" >
+            <button class="search-button">
+                <img class="search-icon" src="assets/icons/search.svg" >
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="assets/icons/voice-search-icon.svg" >
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="assets/icons/upload.svg" >
+                <div class="tooltip">Create</div>
+            </div>
+            <img class="youtube-apps-icon" src="assets/icons/youtube-apps.svg" >
+            <div class="notifications-icon-container">
+                <img class="notifications-icon" src="assets/icons/notifications.svg">
+                <div class="notifications-count">1</div>
+            </div>
+            <img class="current-user-picture" src="assets/images/avatars/avatar-1.png" >
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <!-- 첫 번째 섹션 -->
+        <div class="sidebar-section">
+            <div class="sidebar-link">
+                <img src="assets/icons/home.svg">
+                <div>홈</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/shorts.svg">
+                <div>Shorts</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/subscriptions.svg">
+                <div>구독</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/account_circle.svg">
+                <div>내 페이지</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/history.svg">
+                <div>기록</div>
+            </div>
+        </div>
+
+        <!-- 로그인 섹션 -->
+        <div class="sidebar-section section-signin">
+            <p class="sidebar-message">
+                로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수 있습니다.
+            </p>
+            <button class="signin-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3ea6ff">
+                    <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/>
+                </svg>
+                <span>로그인</span>
+            </button>
+        </div>
+
+        <!-- 탐색 섹션 -->
+        <div class="sidebar-section">
+            <h3 class="sidebar-section-title">탐색</h3>
+            <div class="sidebar-link">
+                <img src="assets/icons/local_mall.svg">
+                <div>쇼핑</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/music_note.svg">
+                <div>음악</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/movie.svg">
+                <div>영화</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/arrow_down.svg">
+                <div>더보기</div>
+            </div>
+        </div>
+
+        <!-- YouTube 더보기 섹션 -->
+        <div class="sidebar-section">
+            <h3 class="sidebar-section-title">YouTube 더보기</h3>
+            <div class="sidebar-link">
+                <img src="assets/icons/youtube-premium.svg">
+                <div>YouTube Premium</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/youtube-music.svg">
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/youtube-kids.svg">
+                <div>YouTube Kids</div>
+            </div>
+        </div>
+
+        <!-- 설정 섹션 -->
+        <div class="sidebar-section">
+            <div class="sidebar-link">
+                <img src="assets/icons/settings.svg">
+                <div>설정</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/flag.svg">
+                <div>신고 기록</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/help.svg">
+                <div>고객센터</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/feedback.svg">
+                <div>의견 보내기</div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <nav class="tabs" aria-label="카테고리 탭">
+            <button class="tabs__item tabs__item--active" type="button">전체</button>
+            <button class="tabs__item" type="button">뉴스</button>
+            <button class="tabs__item" type="button">게임</button>
+            <button class="tabs__item" type="button">음악</button>
+            <button class="tabs__item" type="button">팟캐스트</button>
+            <button class="tabs__item" type="button">라이브</button>
+            <button class="tabs__item" type="button">요리</button>
+            <button class="tabs__item" type="button">Roblox</button>
+            <button class="tabs__item" type="button">최근 업로드</button>
+        </nav>
+
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L01.jpg">
+                    <div class="video-time">10:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Forest
+                        </p>
+                        <p class="video-author">
+                            Sergey Antonov
+                        </p>
+                        <p class="video-stats">
+                            100 views &#183; 1 day ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L02.jpg">
+                    <div class="video-time">20:00</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            눈 덮인 시카고의 황혼녘 스카이라인과 미시간 호수
+                        </p>
+                        <p class="video-author">
+                            Sarthak Banga
+                        </p>
+                        <p class="video-stats">
+                            3K views &#183; 5 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L03.jpg">
+                    <div class="video-time">30:26</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            센트럴 파크의 아름다운 벚꽃
+                        </p>
+                        <p class="video-author">
+                            Wei Huang
+                        </p>
+                        <p class="video-stats">
+                            1M views &#183; 10 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L04.jpg">
+                    <div class="video-time">1:01:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            흰색과 갈색 긴 코팅 강아지
+                        </p>
+                        <p class="video-author">
+                            Caio
+                        </p>
+                        <p class="video-stats">
+                            4M views &#183; 3 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L05.jpg">
+                    <div class="video-time">45:34</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            푸른 하늘을 배경으로 한 하트 모양의 구름
+                        </p>
+                        <p class="video-author">
+                            咲淚 月雨
+                        </p>
+                        <p class="video-stats">
+                            900 views &#183; 2 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L06.jpg">
+                    <div class="video-time">55:30</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            이스탄불 고고학 박물관
+                        </p>
+                        <p class="video-author">
+                            Zeynep N. Tiryaki
+                        </p>
+                        <p class="video-stats">
+                            1.5k views &#183; 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L07.jpg">
+                    <div class="video-time">17:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Fruits
+                        </p>
+                        <p class="video-author">
+                            solod_sha
+                        </p>
+                        <p class="video-stats">
+                            3.9k views &#183; 6 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L08.jpg">
+                    <div class="video-time">2:19:23</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            상공에서 바라본 스페인 도시 야경
+                        </p>
+                        <p class="video-author">
+                            Darya Ol
+                        </p>
+                        <p class="video-stats">
+                            2.5M views &#183; 8 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L09.jpg">
+                    <div class="video-time">56:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Philadelphia, United States
+                        </p>
+                        <p class="video-author">
+                            Trev W. Adams
+                        </p>
+                        <p class="video-stats">
+                            7.8k views &#183; 3 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="assets/images/LongForm/L10.jpg">
+                    <div class="video-time">47:06</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="assets/images/avatars/avatar-1.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            마차 라떼 아트
+                        </p>
+                        <p class="video-author">
+                            Raymond Petrik
+                        </p>
+                        <p class="video-stats">
+                            4M views &#183; 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shorts-container">
+            <div class="shorts-header">
+                <img class="shorts-icon" src="assets/icons/youtube-shorts.svg">
+                <span class="shorts-title">Shorts</span>
+            </div>
+
+            <div class="shorts-grid">
+                
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/Shorts/S01.jpg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">fly</p>
+                        <p class="shorts-video-stats">조회수 5만회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/Shorts/S02.jpg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">코스타리카 사마라 해변의 파란 보트</p>
+                        <p class="shorts-video-stats">조회수 2천회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/Shorts/S03.jpg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">그리스 피라의 아름다운 흰색 건축물</p>
+                        <p class="shorts-video-stats">조회수 100만회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/Shorts/S04.jpg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">우크라이나 핑크 호수</p>
+                        <p class="shorts-video-stats">조회수 6만회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/Shorts/S05.jpg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">Mariam Antadze</p>
+                        <p class="shorts-video-stats">조회수 7천회</p>
+                    </div>
+                </div>
+
+            </div> 
+        </section>
+    </main>
+</body>
+</html>

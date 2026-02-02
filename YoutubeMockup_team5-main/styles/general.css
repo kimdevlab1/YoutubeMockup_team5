@@ -1,0 +1,33 @@
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding: 0;  /* body 패딩 제거 */
+    background-color:#181818;
+    color: white;
+}
+
+/* main 여백 처리 */
+main {
+    margin-left: 240px;  /* 사이드바 너비 */
+    margin-top: 56px;    /* 헤더 높이 */
+    padding: 20px;     
+}
+
+/* 반응형 - 미니 사이드바 */
+@media (max-width: 1312px) {
+    main {
+        margin-left: 72px;
+    }
+}
+
+/* 반응형 - 사이드바 숨김 */
+@media (max-width: 792px) {
+    main {
+        margin-left: 0;
+    }
+}
