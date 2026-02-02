@@ -9,7 +9,7 @@
     left: 0;
     bottom: 0;
     top: 55px; /* 헤더 높이 */
-    background-color: #212121FF; 
+    background-color: #212121FF;
     width: 240px;
     z-index: 200;
     padding: 0;
@@ -40,7 +40,7 @@
 }
 
 .sidebar-link:hover {
-    background-color: #4D4D4D;
+    background-color:#4D4D4D;
 }
 
 .sidebar-link img {
@@ -72,7 +72,6 @@
     padding-right: 15px;
     border: 1px solid #ffffff33;
     border-radius: 18px; 
-    color: #3ea6ff; 
     background: transparent;
     font-size: 14px;
     font-weight: 500;
@@ -103,7 +102,7 @@
     border-radius: 10px;
 }
 .sidebar:hover::-webkit-scrollbar-thumb {
-    background-color: #717171; /* 마우스 올릴 때만 보이게 */
+    background-color:#717171; /* 마우스 올릴 때만 보이게 */
 }
 
 /* --- 반응형 구간 --- */

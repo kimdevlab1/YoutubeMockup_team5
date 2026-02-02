@@ -1,6 +1,7 @@
 .tabs {
   position: sticky;
-  z-index: 20;
+  top: 55px;
+  z-index: 150;
 
   display: flex;
   align-items: center;
@@ -12,9 +13,8 @@
   overflow-y: hidden;
   white-space: nowrap;
 
-  background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-
+  background: #0f0f0f;
+  margin-bottom: 12px;
 }
 
 .tabs__item {

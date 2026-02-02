@@ -25,10 +25,18 @@
 .thumbnail-row {
     margin-bottom: 8px;
     position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+
+    aspect-ratio: 16 / 9;  
+    background-color: #000; 
 }
 
 .thumbnail {
     width: 100%;
+    height: 100%;           
+    object-fit: cover;
+    display: block;
 }
 
 .video-time {
@@ -113,7 +121,7 @@
 }
 
 .shorts-preview:hover {
-    background-color: #3f3f3f;  
+    background-color: #3f3f3f;
 }
 
 /* 쇼츠 이미지 9:16 비율 유지 */
@@ -155,21 +163,11 @@
 
 /* 쇼츠 반응형 */
 @media (min-width: 751px) and (max-width: 999px) {
-    .shorts-grid {
-        grid-template-columns: repeat(3, 1fr);
-        /* 4번째, 5번째 쇼츠는 숨김 */
-        .shorts-preview:nth-child(n+4) {
-            display: none;
-        }
-    }
+  .shorts-grid { grid-template-columns: repeat(3, 1fr); }
+  .shorts-grid > .shorts-preview:nth-child(n+4) { display: none; }
 }
 
 @media (max-width: 750px) {
-    .shorts-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 3번째 영상부터는 싹 다 숨김 */
-        .shorts-preview:nth-child(n+3) {
-            display: none;
-        }
-    }
+  .shorts-grid { grid-template-columns: repeat(2, 1fr); }
+  .shorts-grid > .shorts-preview:nth-child(n+3) { display: none; }
 }
