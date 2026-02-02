@@ -16,3 +16,5 @@
 - 화면설계서 및 결과 문서 작성
 
 <img width="2837" height="1422" alt="스크린샷 2026-02-02 213402" src="https://github.com/user-attachments/assets/8f30b23a-234f-47ed-9c7a-8679af360d95" />
+
+<img width="2839" height="1445" alt="스크린샷 2026-02-02 213421" src="https://github.com/user-attachments/assets/1c4134ea-d275-4239-a079-641ea3c5da26" />
