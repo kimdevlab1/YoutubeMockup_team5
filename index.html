@@ -41,32 +41,104 @@
             <img class="current-user-picture" src="assets/images/avatars/avatar-1.png" >
         </div>
     </header>
+
     <nav class="sidebar">
-        <div class="sidebar-link">
-            <img src="assets/icons/home.svg">
-            <div>Home</div>
+        <!-- 첫 번째 섹션 -->
+        <div class="sidebar-section">
+            <div class="sidebar-link">
+                <img src="assets/icons/home.svg">
+                <div>홈</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/shorts.svg">
+                <div>Shorts</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/subscriptions.svg">
+                <div>구독</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/account_circle.svg">
+                <div>내 페이지</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/history.svg">
+                <div>기록</div>
+            </div>
         </div>
-        <div class="sidebar-link">
-            <img src="assets/icons/explore.svg">
-            <div>Explore</div>
+
+        <!-- 로그인 섹션 -->
+        <div class="sidebar-section section-signin">
+            <p class="sidebar-message">
+                로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수 있습니다.
+            </p>
+            <button class="signin-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3ea6ff">
+                    <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/>
+                </svg>
+                <span>로그인</span>
+            </button>
         </div>
-        <div class="sidebar-link">
-            <img src="assets/icons/subscriptions.svg">
-            <div>Subscriptions</div>
+
+        <!-- 탐색 섹션 -->
+        <div class="sidebar-section">
+            <h3 class="sidebar-section-title">탐색</h3>
+            <div class="sidebar-link">
+                <img src="assets/icons/local_mall.svg">
+                <div>쇼핑</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/music_note.svg">
+                <div>음악</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/movie.svg">
+                <div>영화</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/arrow_down.svg">
+                <div>더보기</div>
+            </div>
         </div>
-        <div class="sidebar-link">
-            <img src="assets/icons/originals.svg">
-            <div>Originals</div>
+
+        <!-- YouTube 더보기 섹션 -->
+        <div class="sidebar-section">
+            <h3 class="sidebar-section-title">YouTube 더보기</h3>
+            <div class="sidebar-link">
+                <img src="assets/icons/youtube-premium.svg">
+                <div>YouTube Premium</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/youtube-music.svg">
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/youtube-kids.svg">
+                <div>YouTube Kids</div>
+            </div>
         </div>
-        <div class="sidebar-link">
-            <img src="assets/icons/youtube-music.svg">
-            <div>Youtube Music</div>
-        </div>
-        <div class="sidebar-link">
-            <img src="assets/icons/library.svg">
-            <div>Library</div>
+
+        <!-- 설정 섹션 -->
+        <div class="sidebar-section">
+            <div class="sidebar-link">
+                <img src="assets/icons/settings.svg">
+                <div>설정</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/flag.svg">
+                <div>신고 기록</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/help.svg">
+                <div>고객센터</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="assets/icons/feedback.svg">
+                <div>의견 보내기</div>
+            </div>
         </div>
     </nav>
+
     <main>
         <section class="video-grid">
             <div class="video-preview">
@@ -289,6 +361,67 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="shorts-container">
+            <div class="shorts-header">
+                <img class="shorts-icon" src="assets/icons/youtube-shorts.svg">
+                <span class="shorts-title">Shorts</span>
+            </div>
+
+            <div class="shorts-grid">
+                
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/thumbnails/thumbnail-6.jpeg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">이 영상 진짜 웃겨요 ㅋㅋㅋ</p>
+                        <p class="shorts-video-stats">조회수 100만회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/thumbnails/thumbnail-3.jpeg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">이 영상 진짜 웃겨요 ㅋㅋㅋ</p>
+                        <p class="shorts-video-stats">조회수 100만회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/thumbnails/thumbnail-7.jpeg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">이 영상 진짜 웃겨요 ㅋㅋㅋ</p>
+                        <p class="shorts-video-stats">조회수 100만회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/thumbnails/thumbnail-7.jpeg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">이 영상 진짜 웃겨요 ㅋㅋㅋ</p>
+                        <p class="shorts-video-stats">조회수 100만회</p>
+                    </div>
+                </div>
+
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-container">
+                        <img class="shorts-thumbnail" src="assets/images/thumbnails/thumbnail-6.jpeg">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-video-title">이 영상 진짜 웃겨요 ㅋㅋㅋ</p>
+                        <p class="shorts-video-stats">조회수 100만회</p>
+                    </div>
+                </div>
+
+            </div> 
         </section>
     </main>
 </body>
